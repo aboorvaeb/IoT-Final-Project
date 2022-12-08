@@ -94,9 +94,9 @@ void reconnect() {
       // if connected, display message
       //M5.Lcd.println("connected");
       // once connected, publish the topic details
-      client->publish("Topic1 - Aboorva", "Topic1 - Aboorva");
+      client->publish("Topic1 - Mahathi", "Topic1 - Mahathi");
       // resubscribing to topic on which the other client will be publishing on
-      client->subscribe("Topic1 - Meghna");
+      client->subscribe("Topic1 - Siva");
     } else {
       // failed connection notification
       M5.Lcd.print("failed, rc = ");
@@ -324,7 +324,7 @@ void loop()
           // printing the published message on Client1 end once button is pressed
           //M5.Lcd.print("\nSending");
           //M5.Lcd.println(msg);
-          client->publish("Topic1 - Aboorva", msg);
+          client->publish("Topic1 - Mahathi", msg);
   }
 
         } else {
