@@ -157,7 +157,7 @@ void loop() {
     M5.update();  // Read the press state of the key.
     // reads the state of the key (pressed/not)
     //if (M5.BtnA.wasReleased()) {  // If the button A is pressed. 
-    if (temperature>80) {  
+    if (temperature>99) {  
           M5.Lcd.setTextColor(WHITE);
           M5.Lcd.print("Button from Client1 was pressed");
           // setting the text color to WHITE
